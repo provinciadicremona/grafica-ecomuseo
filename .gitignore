@@ -1,0 +1,26 @@
+!.gitignore
+!.gitattributes
+
+# Script per anteprima navigabile in intranet
+anteprima.sh
+
+# Cartella con il sito generato
+public
+
+# File temporanei Linux
+*~
+
+# Dipendenze npm
+**/node_modules
+
+# file temporanei di vim
+**/*.swp
+
+# Escludo i log di tmux
+tmux-client-*.log
+
+# cartelle con i file genereati in automatico
+**/dist
+
+# cartella di lavoro temporanea
+tmp

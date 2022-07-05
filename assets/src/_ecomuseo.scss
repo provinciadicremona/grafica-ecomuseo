@@ -1,0 +1,230 @@
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    h2 {
+        padding-left: 0.5rem;
+    }
+}
+
+// li.allegato {
+//     @include allegati("\e9cd", $gray-color-dark);
+// }
+
+// li.modulo {
+//     @include allegati("\e926", $cr-blue);
+// }
+
+// li.pubbli {
+//     @include allegati("\e91f", $cr-bordeaux);
+// }
+
+// li.all-titolo {
+//     @include titolo-allegati();
+// }
+// header.navbar {
+//     background: $cr-blue;
+//     color: $light-color;
+// }
+
+ul.breadcrumb {
+    // portare qui le personalizzazioni
+}
+
+.testata {
+    @extend .column;
+    @extend .col-12;
+    background: $warning-color;
+    // background: #006b43;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: $unit-5;
+}
+.testata-titolo {
+    text-shadow: 0 1px 1px rgba(0,0,0,.50);
+    color: $light-color;
+    @extend .h2;
+    @media (max-width: $size-lg) {
+        font-size: 1rem; 
+    }
+    @media (max-width: $size-sm) {
+        display: none;
+    }
+}
+
+.btn {
+  @include shadow-variant(.3rem);
+  @extend .s-rounded;
+}
+nav {
+  // @include shadow-variant(.3rem);
+  border-left: 1px dashed lighten($primary-color, 20%);
+}
+footer {
+    background: darken($gray-color-dark, 40%);
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    color: $gray-color-dark;
+    font-size: $font-size-sm;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -5px 15px;
+    h3,h4,h5 {
+        color: $light-color;
+    }
+
+    a,:visited,:link {
+        // color: $warning-color;
+        color: lighten($warning-color, 20%);
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    .footer-titolo {
+        color: $light-color;
+        @extend .h3;
+        @media (max-width: $size-md) {
+            font-size: 1rem; 
+        }
+        @media (max-width: $size-sm) {
+            font-size: .8rem; 
+        }
+    }
+
+    .footer-info {
+        @extend .col-4;
+        @extend .col-md-12;
+    }
+}
+
+.v-space {
+    margin: $unit-4 0;
+}
+
+// ul.no-marker {
+//     @include no-marker;
+// }
+
+ul.news {
+    // @include no-marker;
+    li {
+        padding-bottom: $unit-2;
+        // @include dash-separator;
+    }
+}
+
+figure.hero-figure {
+    margin  : 0 0 $layout-spacing 0;
+    position: relative;
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        float: left;
+        text-align: left;
+        color: $warning-color;
+        margin: 0;
+        padding: $unit-6 $unit-4;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+        a {
+            text-shadow: 0px -1px 1px rgba(0,0,0,.95);
+            color: $warning-color;
+        }
+        
+    }
+}
+
+// Ho creato un mixin goodtable per formattare decentemente le tabelle
+// e lo includo nello stile dell'elemento
+// table {
+//     @include goodtable;
+// }
+
+// Estendo il tag <article class="pagina"> per includere tutte le proprietà
+// di layout per una corretta visualizzazione. 
+// article.pagina {
+//     @extend .column;
+//     @extend .col-lg-12;
+//     @extend .col-xl-9;
+//     @extend .col-2x-8;
+//     @extend .col-8;
+// }
+// nav.pagina-nav {
+//     @extend .column;
+//     @extend .col-lg-12;
+//     @extend .col-xl-3;
+//     @extend .col-2x-4;
+//     @extend .col-4;
+// }
+
+address {
+    a[href^="mailto:"] {
+        &:before {
+            position: relative;
+            padding-right: .2rem;
+            font-family: "icomoon";
+            content: "\e945";
+        }
+    }
+    a[href^="tel:"] {
+        &:before {
+            position: relative;
+            padding-right: .2rem;
+            font-family: "icomoon";
+            content: "\e942";
+        }
+    }
+}
+// .nav-pagina {
+//     @include elenco-pagine;
+// }
+.home-sx {
+    @extend .col-8;
+    @extend .col-sm-12;
+}
+.home-dx {
+    @extend .col-4;
+    @extend .col-sm-12;
+}
+.pagina-sx {
+    @extend .col-9;
+    @extend .col-sm-12;
+}
+.pagina-dx {
+    @extend .col-3;
+    @extend .col-sm-12;
+}
+// // cambio l'ordine di visualizzazione delle colonne in home page
+// // per device con larghezza dello schermo inferiore ai 600px
+// .home-sx {
+//     order: 3;
+// }
+// .home-cx {
+//     order: 1;
+// }
+// .home-dx {
+//     order: 2;
+// }
+// @media (max-width: $size-lg) {
+//     .home-sx {
+//         order: 2;
+//     }
+//     .home-cx {
+//         order: 1;
+//     }
+//     .home-dx {
+//         order: 3;
+//     }
+//     .pagina {
+//         order: 1;
+//     }
+//     .pagina-nav {
+//         order: 2;
+//     }
+// }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
