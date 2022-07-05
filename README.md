@@ -1,1 +1,3 @@
-echo # grafica-ecomuseo
+# grafica-ecomuseo
+
+Modifiche alla nuova grafica del sito dell'ecomuseo
