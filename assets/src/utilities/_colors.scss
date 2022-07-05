@@ -20,7 +20,8 @@
 
 @include bg-color-variant(".bg-secondary", $secondary-color);
 
-@include bg-color-variant(".bg-dark", $dark-color);
+// @include bg-color-variant(".bg-dark", $dark-color);
+@include bg-color-variant(".bg-dark", $cool-blue);
 
 @include bg-color-variant(".bg-gray", $bg-color);
 

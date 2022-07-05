@@ -35,16 +35,18 @@ ul.breadcrumb {
 .testata {
     @extend .column;
     @extend .col-12;
-    background: $warning-color;
+    background: $cool-yellow;
     // background: #006b43;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: $unit-5;
 }
 .testata-titolo {
     text-shadow: 0 1px 1px rgba(0,0,0,.50);
-    color: $light-color;
-    @extend .h2;
+    color: $cool-red;
+    @extend .h1;
+    font-weight: 600;
     @media (max-width: $size-lg) {
+        font-weight: 400;
         font-size: 1rem; 
     }
     @media (max-width: $size-sm) {
@@ -61,11 +63,12 @@ nav {
   border-left: 1px dashed lighten($primary-color, 20%);
 }
 footer {
-    background: darken($gray-color-dark, 40%);
+    // background: darken($gray-color-dark, 40%);
+    background: $cool-blue;
     margin-top: 2rem;
     padding-top: 1rem;
     padding-bottom: 0;
-    color: $gray-color-dark;
+    color: $light-color;
     font-size: $font-size-sm;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -5px 15px;
     h3,h4,h5 {
@@ -73,15 +76,16 @@ footer {
     }
 
     a,:visited,:link {
-        // color: $warning-color;
-        color: lighten($warning-color, 20%);
+        color: $cool-beige;
+        // color: lighten($cool-yellow, 20%);
+        // color: $cool-yellow;
         &:hover {
-            color: #fff;
+            color: $cool-yellow;
             text-decoration: none;
         }
     }
     .footer-titolo {
-        color: $light-color;
+        color: $cool-beige;
         @extend .h3;
         @media (max-width: $size-md) {
             font-size: 1rem; 
@@ -129,7 +133,7 @@ figure.hero-figure {
         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
         a {
             text-shadow: 0px -1px 1px rgba(0,0,0,.95);
-            color: $warning-color;
+            color: $cool-beige;
         }
         
     }

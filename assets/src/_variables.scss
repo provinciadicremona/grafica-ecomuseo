@@ -4,9 +4,18 @@ $version: "0.5.9";
 // Core features
 $rtl: false !default;
 
+// nuovi colori da coolors.co
+$cool-beige:  #eae2b7;
+$cool-yellow:  #fcbf49;
+$cool-orange:  #f77f00;
+$cool-red:  #d62828;
+$cool-blue:  #003049;
+$cool-green:  #095835;
+
 // Core colors
 // $primary-color: #5755d9 !default;
-$primary-color: #936514 !default;
+// $primary-color: #936514 !default;
+$primary-color: $cool-red !default;
 $primary-color-dark: darken($primary-color, 3%) !default;
 $primary-color-light: lighten($primary-color, 3%) !default;
 $secondary-color: lighten($primary-color, 37.5%) !default;
@@ -29,17 +38,24 @@ $bg-color-light: $light-color !default;
 
 // Control colors
 // $success-color: #32b643 !default;
-$success-color: #09700a !default;
-$warning-color: #ffb700 !default;
-$error-color: #e85600 !default;
+// Colori al 5/7/2022
+// $success-color: #09700a !default;
+// $warning-color: #ffb700 !default;
+// $error-color: #e85600 !default;
+
+
+$success-color: $cool-green !default;
+$warning-color: $cool-orange !default;
+$error-color: $cool-red  !default;
 
 // Other colors
 $code-color: #d73e48 !default;
 $highlight-color: #ffe9b3 !default;
 $body-bg: $bg-color-light !default;
-$body-font-color: lighten($dark-color, 5%) !default;
+$body-font-color: lighten($dark-color, 10%) !default;
 // $link-color: $error-color !default;
-$link-color: darken($primary-color, 15%) !default;
+$link-color: darken($cool-red, 5%) !default;
+// $link-color: darken($primary-color, 15%) !default;
 $link-color-dark: darken($link-color, 10%) !default;
 $link-color-light: lighten($link-color, 10%) !default;
 

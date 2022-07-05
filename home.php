@@ -55,7 +55,7 @@ require_once 'header.php';
                     </article>
                     <article class="tile tile-centered">
                         <div class="tile-icon">
-                            <div class="example-tile-icon text-error h1">
+                            <div class="example-tile-icon text-success h1">
                                 <i class="icon icon-book centered"></i>&nbsp;
                             </div>
                         </div>

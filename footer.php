@@ -1,6 +1,6 @@
  </div>
         <br class="divider" />
-        <footer class="bg-dark">
+        <footer class=bg-dark>
             <div class="container grid-xl">
                 <div class="columns">
                     <div class="navbar column col-12">
