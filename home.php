@@ -8,7 +8,7 @@ require_once 'header.php';
                         <figcaption class="h3"><a href="#">L'Ecomuseo della Provincia di Cremona</a></figcaption>
                     </figure>
                     <br class="divider">
-                    <h2 class="h3">Novit&agrave; ed iniziative</h2>
+                    <h2 class="h3 text-success">Novit&agrave; ed iniziative</h2>
                     <article class="tile tile-centered">
                         <div class="tile-icon">
                             <div class="example-tile-icon text-success h1">

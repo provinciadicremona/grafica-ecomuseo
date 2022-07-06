@@ -39,11 +39,16 @@ ul.breadcrumb {
     // background: #006b43;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: $unit-5;
+    .cerca-label {
+        color: $cool-red;
+        font-size: .8rem;
+        font-weight: 600;
+    }
 }
 .testata-titolo {
     text-shadow: 0 1px 1px rgba(0,0,0,.50);
     color: $cool-red;
-    @extend .h1;
+    @extend .h3;
     font-weight: 600;
     @media (max-width: $size-lg) {
         font-weight: 400;
@@ -192,11 +197,11 @@ address {
     @extend .col-sm-12;
 }
 .pagina-sx {
-    @extend .col-9;
+    @extend .col-8;
     @extend .col-sm-12;
 }
 .pagina-dx {
-    @extend .col-3;
+    @extend .col-4;
     @extend .col-sm-12;
 }
 // // cambio l'ordine di visualizzazione delle colonne in home page

@@ -21,7 +21,8 @@
             </section>
             <section class="navbar-section">
                 <div class="input-group input-inline">
-                    <input class="form-input" type="text" placeholder="cerca">
+                    <label class="cerca-label" for="cerca-barra">Cerca nel sito &nbsp;</label>
+                    <input class="form-input" type="text" placeholder="Cerca nel sito">
                     <button class="btn btn-error input-group-btn s-rounded"><span class="icon icon-search"></span></button>&nbsp;
                 </div>
             </section>
