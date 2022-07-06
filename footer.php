@@ -52,4 +52,22 @@
             </div>
         </footer>
     </body>
+    <script>
+        function toggleSearchBox() {
+            var x = document.getElementById("mobileSearch");
+            if (x.style.display === "none" || x.style.display === '') {
+                x.style.display = "block";
+                document.getElementById("cerca-mobile").focus();
+            } else {
+                x.style.display = "none";
+            }
+        } 
+    </script>
+    <script>
+        // Mostra il menu per il mobile
+        document.getElementById("hamburger").addEventListener("click", function(){
+            this.classList.toggle("active");
+            document.querySelector(".mobile-menu").classList.toggle("active");
+        });
+    </script>
 </html>
