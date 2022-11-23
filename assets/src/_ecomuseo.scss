@@ -40,14 +40,14 @@ ul.breadcrumb {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: $unit-5;
     .cerca-label {
-        color: $cool-red;
+        color: $cool-green;
         font-size: .8rem;
         font-weight: 600;
     }
 }
 .testata-titolo {
     text-shadow: 0 1px 1px rgba(0,0,0,.50);
-    color: $cool-red;
+    color: $cool-green;
     @extend .h3;
     font-weight: 600;
     @media (max-width: $size-md) {
